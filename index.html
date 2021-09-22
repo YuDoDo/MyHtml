@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+			}
+
+			.box {
+				float: left;
+				position: relative;
+				width: 300px;
+				width: 300px;
+				margin: 100px 200px;
+				/* overflow: hidden; */
+			}
+
+			.box>img {
+				width: 500;
+				height: 300px;
+			}
+
+			.box>* {
+				transition: 1s;
+				position: absolute;
+				left: 0px;
+				top: 0px;
+			}
+
+			.box h2 {
+				color: #0077AA;
+				width: 150px;
+				transform: translateX(0) translateY(260px);
+			}
+
+			.box p {
+				color: white;
+			}
+
+			.box p:nth-of-type(1) {
+				transform: translateX(100px) translateY(-150px);
+			}
+
+			.box p:nth-of-type(2) {
+				transform: translateX(120px) translateY(-110px);
+				transition: 1s 0.1s;
+			}
+
+			.box p:nth-of-type(3) {
+				transform: translateX(220px) translateY(-100px);
+				transition: 1s 0.2s;
+			}
+
+			.box p:nth-of-type(4) {
+				transform: translateX(260px) translateY(-90px);
+				transition: 1s 0.3s;
+			}
+
+			.box p:nth-of-type(5) {
+				transform: translateX(300px) translateY(-80px);
+				transition: 1s 0.4s;
+			}
+
+			.box:hover p:nth-of-type(1) {
+				transform: translateY(20px) translateX(80px);
+			}
+
+			.box:hover p:nth-of-type(2) {
+				transform: translateY(50px) translateX(80px);
+			}
+
+			.box:hover p:nth-of-type(3) {
+				transform: translateY(80px) translateX(80px);
+			}
+
+			.box:hover p:nth-of-type(4) {
+				transform: translateY(110px) translateX(80px);
+			}
+
+			.box:hover p:nth-of-type(5) {
+				transform: translateY(140px) translateX(80px);
+			}
+
+			.imgg {
+				display: inline-block;
+				height: auto;
+				max-width: 100%;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<img src="./img/f1548a96646af57576691caeb065a9f.jpg" class="imgg">
+			<h2>姓名：奥子奥</h2>
+			<p class="p1">生日：2020.03.15</p>
+			<p class="p2">体重：9斤左右</p>
+			<p class="p3">毛色：黑白参半</p>
+			<p class="p4">擅长：讽</p>
+			<p class="p5">喜欢的食物：除了狗粮</p>
+		</div>
+	</body>
+</html>
